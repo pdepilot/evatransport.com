@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transport Booking</title>
+     <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #000;
+        }
+
+        .booking-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: royalblue;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: royalblue;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        .summary-box {
+            background: royalblue;
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .summary-title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .summary-item {
+            margin-bottom: 10px;
+            font-size: 15px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 10px;
+        }
+
+        @media (max-width: 900px) {
+            .booking-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .fa-arrow-left{
+    font-size: 30px;
+    color: white;margin-left: 35px;
+    margin-top: 5px;
+    border: 1px solid royalblue;
+    width: 55px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 5px;
+    background-color: royalblue;
+}
+.fa-arrow-left:hover{
+    background-color: white;
+    color: royalblue;
+}
+    </style>
+</head>
+
+<body>
+
+    <a href="bookings.html">  <i class="fa-solid fa-arrow-left"></i></a></i>
+
+    <div class="booking-container">
+
+        <!-- Booking Form -->
+        <div>
+            <h2>Book Your Trip</h2>
+
+            <label for="from">Pickup Location</label>
+            <input type="text" id="from" placeholder="Enter pickup location" />
+
+            <label for="to">Destination</label>
+            <input type="text" id="to" placeholder="Enter destination" />
+
+            <label for="date">Date of Travel</label>
+            <input type="date" id="date" />
+
+            <label for="time">Time of Travel</label>
+            <input type="time" id="time" />
+
+            <label for="passengers">Number of Passengers</label>
+            <select id="passengers">
+                <option>1 Passenger</option>
+                <option>2 Passengers</option>
+                <option>3 Passengers</option>
+                <option>4 Passengers</option>
+                <option>5+ Passengers</option>
+            </select>
+
+            <label for="vehicle">Select Vehicle Type</label>
+            <select id="vehicle">
+                <option>Bus</option>
+                <option>Shuttle</option>
+                <option>Car</option>
+                <option>Minivan</option>
+            </select>
+
+            <h2>Passenger Information</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" />
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter phone number" />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter email address" />
+
+            <button onclick="nextPage()">Submit Booking</button>
+        </div>
+
+        <!-- Booking Summary -->
+        <div class="summary-box">
+            <div class="summary-title">Booking Summary</div>
+
+            <div class="summary-item">Pickup: <span id="sum-from">----</span></div>
+            <div class="summary-item">Destination: <span id="sum-to">----</span></div>
+            <div class="summary-item">Date: <span id="sum-date">----</span></div>
+            <div class="summary-item">Time: <span id="sum-time">----</span></div>
+            <div class="summary-item">Passengers: <span id="sum-passengers">----</span></div>
+            <div class="summary-item">Vehicle: <span id="sum-vehicle">----</span></div>
+            <div class="summary-item">Name: <span id="sum-name">----</span></div>
+            <div class="summary-item">Phone: <span id="sum-phone">----</span></div>
+            <div class="summary-item">Email: <span id="sum-email">----</span></div>
+        </div>
+
+    </div>
+
+    <!-- Simple JS to update summary -->
+    <script>
+        const fields = ["from", "to", "date", "time", "passengers", "vehicle", "name", "phone", "email"];
+
+        fields.forEach(field => {
+            document.getElementById(field).addEventListener("input", () => {
+                document.getElementById("sum-" + field).textContent =
+                    document.getElementById(field).value || "----";
+            });
+        });
+        function nextPage(){
+            localStorage.setItem("from", document.getElementById("from").value);
+            localStorage.setItem("to", document.getElementById("to").value);
+            localStorage.setItem("date", document.getElementById("date").value);
+            localStorage.setItem("time", document.getElementById("time").value);
+            localStorage.setItem("passengers", document.getElementById("passengers").value);
+            localStorage.setItem("vehicle", document.getElementById("vehicle").value);
+            localStorage.setItem("name", document.getElementById("name").value);
+            localStorage.setItem("phone", document.getElementById("phone").value);
+            localStorage.setItem("e-mail", document.getElementById("email").value);
+          window.location.href = "trips.html";
+        }
+    </script>
+
+</body>
+</html>

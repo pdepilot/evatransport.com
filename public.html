@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interstate Transport Booking</title>
+   <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+      color: #000;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      color: royalblue;
+      font-weight: bold;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 7px;
+      display: block;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: royalblue;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 17px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #1e40af;
+    }
+
+    .summary-box {
+      background: royalblue;
+      color: white;
+      padding: 25px;
+      border-radius: 15px;
+      height: fit-content;
+    }
+
+    .summary-title {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .summary-item {
+      font-size: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+     .fa-arrow-left{
+    font-size: 30px;
+    color: white;margin-left: 35px;
+    margin-top: 5px;
+    border: 1px solid royalblue;
+    width: 55px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 5px;
+    background-color: royalblue;
+}
+.fa-arrow-left:hover{
+    background-color: white;
+    color: royalblue;
+}
+  </style>
+</head>
+
+<body>
+
+       <a href="bookings.html"> <i class="fa-solid fa-arrow-left"></i></a></i>
+
+  <div class="container">
+
+    <!-- Booking Form -->
+    <div>
+      <h2>Interstate Booking Form</h2>
+
+      <label>Departure State</label>
+      <select id="departure">
+        <option value="">Select State</option>
+        <option>Lagos</option>
+        <option>Abuja</option>
+        <option>Rivers</option>
+        <option>Kaduna</option>
+        <option>Enugu</option>
+        <option>Edo</option>
+        <option>Delta</option>
+        <option>Kano</option>
+      </select>
+
+      <label>Destination State</label>
+      <select id="destination">
+        <option value="">Select State</option>
+        <option>Lagos</option>
+        <option>Abuja</option>
+        <option>Rivers</option>
+        <option>Kaduna</option>
+        <option>Enugu</option>
+        <option>Edo</option>
+        <option>Delta</option>
+        <option>Kano</option>
+      </select>
+
+      <label>Travel Date</label>
+      <input type="date" id="date">
+
+      <label>Travel Time</label>
+      <input type="time" id="time">
+
+      <label>Bus Type</label>
+      <select id="busType">
+        <option value="Regular Bus">Regular Bus</option>
+        <option value="Executive Bus">Mini Bus</option>
+        <option value="Luxury Bus">Luxury Bus</option>
+      </select>
+
+      <label>Seat Number</label>
+      <select id="seat">
+        <option>Select Seat</option>
+        <option>Seat 1</option>
+        <option>Seat 2</option>
+        <option>Seat 3</option>
+        <option>Seat 4</option>
+        <option>Seat 5</option>
+        <option>Seat 6</option>
+        <option>Seat 7</option>
+        <option>Seat 8</option>
+      </select>
+
+      <h2>Passenger Details</h2>
+
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Enter full name">
+
+      <label>Phone Number</label>
+      <input type="text" id="phone" placeholder="Enter phone number">
+
+      <label>Email Address</label>
+      <input type="email" id="email" placeholder="Your email address">
+
+      <button>Confirm Booking</button>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary-box">
+      <div class="summary-title">Booking Summary</div>
+
+      <div class="summary-item">Departure: <span id="sum-departure">----</span></div>
+      <div class="summary-item">Destination: <span id="sum-destination">----</span></div>
+      <div class="summary-item">Date: <span id="sum-date">----</span></div>
+      <div class="summary-item">Time: <span id="sum-time">----</span></div>
+      <div class="summary-item">Bus Type: <span id="sum-busType">----</span></div>
+      <div class="summary-item">Seat Number: <span id="sum-seat">----</span></div>
+      <div class="summary-item">Name: <span id="sum-name">----</span></div>
+      <div class="summary-item">Phone: <span id="sum-phone">----</span></div>
+      <div class="summary-item">Email: <span id="sum-email">----</span></div>
+    </div>
+
+  </div>
+
+  <script>
+    const fields = [
+      "departure", "destination", "date", "time",
+      "busType", "seat", "name", "phone", "email"
+    ];
+
+    fields.forEach(field => {
+      document.getElementById(field).addEventListener("input", () => {
+        document.getElementById("sum-" + field).textContent =
+          document.getElementById(field).value || "----";
+      });
+    });
+
+    
+  </script>
+
+</body>
+</html>

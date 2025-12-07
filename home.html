@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .a{
+            background-color: royalblue;
+            display: flex;
+            gap: 700px;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            z-index: 9;
+            position: fixed;
+        }
+        #login-btn{
+            width: 100px;
+            height: 40px;
+            margin-top: 15px;
+            background-color: royalblue;
+            border-radius: 8px;
+            border-color: white;
+        }
+        #login-btn a{
+            color: white;
+            text-decoration: none;
+
+        }
+        .d{
+            margin-left: 40px;
+        }
+         .hero {
+            width: 100%;
+            height: 500px;
+            background: url("download.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: black;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+         .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+        }
+        .footer {
+  background: #053061;
+  color: #eaeaea;
+  padding: 40px 20px 10px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 32px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00aaff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0 0;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+}
+
+
+    </style>
+</head>
+<body>
+        <section class="a">
+        <div class="d">
+         <img style="margin-left: 5px;margin-top: 2px;" src="banda-eva-2008-seeklogo.png" alt="profile photo" width="80px" height="40px">
+         <br>EVA TRANSPORT CO.
+        </div>
+        <div class="b">
+            <button id="login-btn"><a href="login.html">LOGIN</a></button>
+        </div>
+        </section>
+         <section class="hero">
+        <div class="hero-content">
+            <h1>Begin with us today</h1>
+            <p>Assured safe, reliable & comfortable Travel Solutions</p>
+        </div>
+    </section>
+    <h1 style="color: royalblue;text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Welcome</h1>
+    <p style="text-align: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Login to our website now and view our various features all for you.</p>
+     <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-section">
+      <h2 class="footer-title">About Us</h2>
+      <p>
+        We provide safe, comfortable, and reliable transportation services with a modern fleet,
+        experienced drivers, and 24/7 customer support.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h2 class="footer-title">Quick Links</h2>
+      <ul class="footer-links">
+        <li><a href="main home.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li class="dropdown">
+          <a href="bookings.html">Bookings▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="private booking.html">Private charter</a></li>
+            <li><a href="public.html">Public transport</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h2 class="footer-title">Contact Us</h2>
+      <p>Phone: +234 912 136 5664</p>
+      <p>Email: davidnedum673@yahoo.com</p>
+      <p>Address: Lagos, Nigeria</p>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Your Transport Company. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Support - Dashboard</title>
+    <link rel="stylesheet" href="support.css">
+    <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Mobile Menu Button -->
+    <div class="menu-btn" onclick="toggleSidebar()">☰</div>
+
+    <!-- USER SIDEBAR (same as dashboard) -->
+    <aside id="sidebar">
+         <a href="main home.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="profile">
+            <img class="avatar" src="mann 2.jpg">
+            <h3>Welcome, David</h3>
+            <p>User Dashboard</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="trips.html">Trip History</a></li>
+            <li class="active"><a href="support.html">Support</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="home.html">Logout</a></li>
+        </ul>
+    </aside>
+
+
+    <!-- SUPPORT CONTENT -->
+    <main class="content">
+
+        <h1>Support Center</h1>
+        <p>If you have questions, complaints, or need assistance, feel free to <a href="contact.html">contact us.</a> </p>
+
+        <div class="support-container">
+
+           
+
+            <!-- SUPPORT HISTORY -->
+            <div class="support-card">
+                <h2>Support History</h2>
+
+                <div class="ticket">
+                    <h3>Payment not reflecting</h3>
+                    <p>Date: 28 Nov 2025</p>
+                    <p class="status open">Status: Open</p>
+                </div>
+
+                <div class="ticket">
+                    <h3>Trip rescheduled request</h3>
+                    <p>Date: 14 Nov 2025</p>
+                    <p class="status closed">Status: Resolved</p>
+                </div>
+
+                <div class="ticket">
+                    <h3>Account login issue</h3>
+                    <p>Date: 03 Nov 2025</p>
+                    <p class="status closed">Status: Resolved</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+        
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

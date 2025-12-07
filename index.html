@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA TRANSPORTS - Premium Transportation Services</title>
+    <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div class="splash">
+        EVA TRANSPORT CO.
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="images/banda-eva-2008-seeklogo.png" alt="Eva Transport Logo">
+                <span>EVA TRANSPORT CO.</span>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li class="dropdown">
+                        <a href="#bookings">Bookings <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="private-booking.html">Private Charter</a></li>
+                            <li><a href="public.html">Public Movement</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#fleets">Fleets</a></li>
+                </ul>
+            </nav>
+
+            <!-- User Icons -->
+            <div class="user-icons">
+                <a href="notifications.html"><i class="fa-solid fa-bell"></i></a>
+                <a href="dashboard.html"><i class="fa-solid fa-circle-user"></i></a>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav" id="mobileNav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="mobile-dropdown" id="mobileDropdown">
+                    <a href="bookings.html" class="dropdown-toggle">Bookings <i class="fas fa-chevron-down"></i></a>
+                    <ul class="mobile-dropdown-menu">
+                        <li><a href="private-booking.html">Private Charter</a></li>
+                        <li><a href="public.html">Public Movement</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="fleets.html">Fleets</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Slider - Clean Auto-Sliding -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <!-- Slide 1 -->
+            <div class="slide active" data-slide="1">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Luxury Bus Travel" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">YOUR COMFORT,<br>OUR PRIDE</h1>
+                    <p class="slide-subtitle">Experience premium transportation with our state-of-the-art luxury buses, featuring plush seating, WiFi, and onboard entertainment for your ultimate comfort.</p>
+                    <a href="bookings.html" class="btn-primary">Book Your Journey</a>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" data-slide="2">
+                <img src="https://images.unsplash.com/photo-1567602901358-5ba17615aaeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Safe Travel" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">SAFETY FIRST,<br>ALWAYS</h1>
+                    <p class="slide-subtitle">Our professionally trained drivers and meticulously maintained fleet ensure your safety is our top priority on every journey across Nigeria.</p>
+                    <a href="about.html" class="btn-primary">Learn About Our Safety</a>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" data-slide="3">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Nationwide Coverage" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">CONNECTING<br>NIGERIA</h1>
+                    <p class="slide-subtitle">With routes spanning major cities across Nigeria, we bring people together and make travel seamless, comfortable, and reliable.</p>
+                    <a href="services.html" class="btn-primary">View Our Routes</a>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+            <div class="slide" data-slide="4">
+                <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Executive Travel" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">EXECUTIVE<br>TRAVEL REDEFINED</h1>
+                    <p class="slide-subtitle">Our premium executive services offer privacy, comfort, and flexibility for business travelers and those seeking exclusive travel experiences.</p>
+                    <a href="private-booking.html" class="btn-primary">Book Executive Service</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle Progress Indicator (Hidden) -->
+        <div class="slide-progress" id="slideProgress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Services" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="about-content">
+                        <h2>About EVA Transports</h2>
+                        <p>We are a reliable transportation company committed to providing safe, comfortable and timely travel experiences across major areas in Nigeria. With years of dedicated service in the transport industry, we have built a reputation for excellence, reliability and customer care.</p>
+                        <p>What sets us apart is our modern fleet, experienced drivers, private transport seamless booking process and strong focus on passenger comfort and safety—ensuring every journey is smooth, stress-free and enjoyable.</p>
+                        <a href="about.html" class="btn-primary mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Interstate Travel</h3>
+                    <p>Comfortable bus travel across major states in Nigeria with modern amenities and experienced drivers.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Private Charter</h3>
+                    <p>Exclusive private hire services to your designated destination with flexible scheduling and premium comfort.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Logistics & Delivery</h3>
+                    <p>Secure and timely delivery of goods across Nigeria with reliable tracking and professional handling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleets Section -->
+    <section class="fleets-section" id="fleets">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Fleets</h2>
+            
+            <!-- Luxury Buses -->
+            <div class="fleet-category" data-aos="fade-up">
+                <h3 class="fleet-title">Luxury Buses</h3>
+                <div class="fleet-grid">
+                    <!-- Fleet Card 1 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Executive Coach</h4>
+                            <p class="fleet-capacity">50 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Executive Coach</h4>
+                            <p><strong>Capacity:</strong> 50 passengers</p>
+                            <p><strong>Features:</strong> Reclining seats, AC, WiFi, Restroom, Entertainment system</p>
+                            <p><strong>Routes:</strong> Interstate long-distance travel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 2 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1557221325-15c8e6c1d155?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1557221325-15c8e6c1d155?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Premium Sleeper</h4>
+                            <p class="fleet-capacity">40 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Premium Sleeper</h4>
+                            <p><strong>Capacity:</strong> 40 passengers</p>
+                            <p><strong>Features:</strong> Sleeper seats, AC, WiFi, Charging ports, Blankets</p>
+                            <p><strong>Routes:</strong> Overnight interstate travel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 3 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Business Class</h4>
+                            <p class="fleet-capacity">30 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Business Class</h4>
+                            <p><strong>Capacity:</strong> 30 passengers</p>
+                            <p><strong>Features:</strong> Extra legroom, AC, WiFi, Work tables, Complimentary snacks</p>
+                            <p><strong>Routes:</strong> Corporate and executive travel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 4 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Luxury Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">First Class</h4>
+                            <p class="fleet-capacity">25 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>First Class</h4>
+                            <p><strong>Capacity:</strong> 25 passengers</p>
+                            <p><strong>Features:</strong> Luxury seats, AC, WiFi, On-board attendant, Meal service</p>
+                            <p><strong>Routes:</strong> Premium charter services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mini Buses -->
+            <div class="fleet-category" data-aos="fade-up">
+                <h3 class="fleet-title">Mini Buses</h3>
+                <div class="fleet-grid">
+                    <!-- Fleet Card 1 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mini Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Executive Shuttle</h4>
+                            <p class="fleet-capacity">18 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Executive Shuttle</h4>
+                            <p><strong>Capacity:</strong> 18 passengers</p>
+                            <p><strong>Features:</strong> Comfortable seating, AC, WiFi, Luggage space</p>
+                            <p><strong>Routes:</strong> Airport transfers, corporate shuttles</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 2 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mini Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Family Mini Bus</h4>
+                            <p class="fleet-capacity">15 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Family Mini Bus</h4>
+                            <p><strong>Capacity:</strong> 15 passengers</p>
+                            <p><strong>Features:</strong> Spacious interior, AC, Child-friendly, Entertainment system</p>
+                            <p><strong>Routes:</strong> Family trips, group outings</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 3 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1557221325-15c8e6c1d155?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1557221325-15c8e6c1d155?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mini Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">City Commuter</h4>
+                            <p class="fleet-capacity">20 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>City Commuter</h4>
+                            <p><strong>Capacity:</strong> 20 passengers</p>
+                            <p><strong>Features:</strong> Efficient design, AC, Daily maintenance, GPS tracking</p>
+                            <p><strong>Routes:</strong> Urban and suburban routes</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 4 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mini Bus" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Tourist Shuttle</h4>
+                            <p class="fleet-capacity">16 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Tourist Shuttle</h4>
+                            <p><strong>Capacity:</strong> 16 passengers</p>
+                            <p><strong>Features:</strong> Large windows, AC, Tour guide seat, Audio system</p>
+                            <p><strong>Routes:</strong> Tourist destinations and sightseeing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Cars -->
+            <div class="fleet-category" data-aos="fade-up">
+                <h3 class="fleet-title">Executive Cars</h3>
+                <div class="fleet-grid">
+                    <!-- Fleet Card 1 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Executive Car" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Premium Sedan</h4>
+                            <p class="fleet-capacity">4 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Premium Sedan</h4>
+                            <p><strong>Capacity:</strong> 4 passengers</p>
+                            <p><strong>Features:</strong> Luxury interior, AC, WiFi, Privacy screen, Refreshments</p>
+                            <p><strong>Routes:</strong> Executive travel, airport transfers</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 2 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Executive Car" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Luxury SUV</h4>
+                            <p class="fleet-capacity">6 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Luxury SUV</h4>
+                            <p><strong>Capacity:</strong> 6 passengers</p>
+                            <p><strong>Features:</strong> Spacious interior, AC, WiFi, Entertainment system, Cooler box</p>
+                            <p><strong>Routes:</strong> Family trips, group travel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 3 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Executive Car" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Business Class</h4>
+                            <p class="fleet-capacity">4 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Business Class</h4>
+                            <p><strong>Capacity:</strong> 4 passengers</p>
+                            <p><strong>Features:</strong> Comfort seating, AC, Charging ports, Work desk</p>
+                            <p><strong>Routes:</strong> Corporate meetings, business travel</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Fleet Card 4 -->
+                    <div class="fleet-card" data-img="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Executive Car" class="fleet-image">
+                        <div class="fleet-overlay">
+                            <h4 class="fleet-name">Executive Van</h4>
+                            <p class="fleet-capacity">8 Seater</p>
+                        </div>
+                        <div class="fleet-details">
+                            <h4>Executive Van</h4>
+                            <p><strong>Capacity:</strong> 8 passengers</p>
+                            <p><strong>Features:</strong> Ample space, AC, WiFi, Luggage capacity, Comfort seats</p>
+                            <p><strong>Routes:</strong> Small group travel, airport transfers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <p class="lead mb-4">All vehicles feature strong cooling air conditioners, comfortable seating capacity, and free WiFi throughout the trip.</p>
+                <a href="fleet.html" class="btn-primary">Explore Full Fleet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="choice-section" id="choice">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1567602901358-5ba17615aaeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Why Choose Us" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="choice-content">
+                        <h2>Why Choose EVA Transports</h2>
+                        <p>Choosing us means choosing a transportation company that puts your safety, comfort, and satisfaction first. We take pride in maintaining a modern fleet of clean, comfortable, and fully serviced vehicles to ensure every trip is smooth and enjoyable.</p>
+                        <p>Our team of experienced and well-trained drivers is dedicated to providing safe and reliable travel, giving you peace of mind throughout your journey. We also believe that quality transportation should be accessible, which is why we offer competitive and affordable prices without compromising on service.</p>
+                        <a href="about.html" class="btn-primary mt-3">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="services-section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mx-auto text-center" data-aos="fade-up">
+                    <p class="lead mb-4">Ready to travel with us? Get in touch for bookings, inquiries, or more information about our services.</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <span>+234 912 136 5664</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <span>davidnedum673@yahoo.com</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="btn-primary">Contact Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div class="modal-overlay" id="imageModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <img id="modalImage" src="" alt="Full size image" class="modal-image">
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/banda-eva-2008-seeklogo.png" alt="Eva Transport Logo">
+                    <span>EVA TRANSPORT CO.</span>
+                </div>
+                <p>We provide safe, comfortable, and reliable transportation services with a modern fleet, experienced drivers, and 24/7 customer support.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleets">Our Fleets</a></li>
+                    <li><a href="#bookings">Bookings</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Info</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-phone-alt me-2"></i> +234 912 136 5664</li>
+                    <li><i class="fas fa-envelope me-2"></i> davidnedum673@yahoo.com</li>
+                    <li><i class="fas fa-map-marker-alt me-2"></i> Lagos, Nigeria</li>
+                </ul>
+                <h3 class="footer-title mt-4">Business Hours</h3>
+                <ul class="footer-links">
+                    <li>Monday - Friday: 7am - 10pm</li>
+                    <li>Saturday: 8am - 9pm</li>
+                    <li>Sunday: 9am - 8pm</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 EVA TRANSPORT CO. All rights reserved. | Designed for premium transportation services</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign up.css">
+      <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <i class="fa-solid fa-arrow-left"></i>
+
+    <div class="container">
+        <div class="form-box">
+            <h1>Create Account</h1>
+            <p>Join our platform today</p>
+
+            <form>
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" maxlength="10" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm password" required>
+                </div>
+
+                <button type="submit" id="btn"><a href="main home.html">Sign Up</a></button>
+
+                <p class="login-text">
+                    Already have an account? <a href="login.html">Log In</a>
+                </p>
+            </form>
+
+        </div>
+    </div>
+    <script>
+      const button= document.getElementById("btn")
+            button.addEventListener('click', function(){
+                alert('Your form has been submitted');
+            });
+</script>
+
+</body>
+</html>

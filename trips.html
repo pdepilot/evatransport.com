@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Confirmed</title>
+    <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 400px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background: royalblue;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header i {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .details {
+            padding: 40px;
+        
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+
+        .summary-item strong {
+            color: royalblue;
+            min-width: 180px;
+        }
+
+        .back-btn {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 14px;
+            background: royalblue;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .fa-arrow-left {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .summary-item { flex-direction: column; gap: 5px; }
+            .summary-item strong { min-width: auto; }
+        }/* SIDEBAR (same styling as dashboard) */
+#sidebar {
+    width: 260px;
+    background: black;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.profile {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu a:hover,
+.active a {
+    background: royalblue;
+    border-radius: 5px;
+}
+.fa-arrow-left{
+    font-size: 20px;
+    margin-left: 6px;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 45px;
+    height: 30px;
+    color: white;
+    padding-top: 8px;
+}
+.fa-arrow-left:hover{
+    background-color: white;
+    color: royalblue;
+}
+
+    </style>
+</head>
+<body>
+        <!-- USER SIDEBAR -->
+    <aside id="sidebar">
+         <a href="main home.html">  <i class="fa-solid fa-arrow-left"></i></a></i>
+        <div class="profile">
+            <img class="avatar" src="mann 2.jpg">
+            <h3>Welcome, David</h3>
+            <p>User Dashboard</p>
+        </div>
+
+        <ul class="menu">
+            <li><a href="dashboard.html">Dashboard</a></li>
+           
+            <li class="active"><a href="#">Trip History</a></li>
+            
+            <li><a href="support.html">Support</a></li>
+            <li><a href="profile.html">Profile </a></li>
+             <li><a href="home.html">Logout</a></li>
+        </ul>
+    </aside>
+
+
+    <div class="container">
+        <div class="header">
+            <i class="fa-solid fa-check-circle"></i>
+            <h1>Booking Confirmed!</h1>
+            <p>Your private transport has been successfully booked</p>
+        </div>
+
+        <div class="details">
+            <div class="summary-item">
+                <strong>Pickup Location:</strong>
+                <span id="pickup">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Destination:</strong>
+                <span id="destination">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Date of Travel:</strong>
+                <span id="date">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Time:</strong>
+                <span id="time">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Passengers:</strong>
+                <span id="passengers">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Vehicle Type:</strong>
+                <span id="vehicle">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Full Name:</strong>
+                <span id="name">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Phone:</strong>
+                <span id="phone">Loading...</span>
+            </div>
+            <div class="summary-item">
+                <strong>Email:</strong>
+                <span id="email">Loading...</span>
+            </div>
+        </div>
+
+        <a href="private booking.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> Book Another Trip
+        </a>
+    </div>
+
+    <script>
+        // Retrieve and display all saved booking data
+        document.getElementById("pickup").textContent = localStorage.getItem("from") || "Not provided";
+        document.getElementById("destination").textContent = localStorage.getItem("to") || "Not provided";
+        document.getElementById("date").textContent = localStorage.getItem("date") || "Not selected";
+        document.getElementById("time").textContent = localStorage.getItem("time") || "Not selected";
+        document.getElementById("passengers").textContent = localStorage.getItem("passengers") || "Not selected";
+        document.getElementById("vehicle").textContent = localStorage.getItem("vehicle") || "Not selected";
+        document.getElementById("name").textContent = localStorage.getItem("name") || "Not provided";
+        document.getElementById("phone").textContent = localStorage.getItem("phone") || "Not provided";
+        document.getElementById("email").textContent = localStorage.getItem("e-mail") || "Not provided";
+
+        // Optional: Clear localStorage after showing (uncomment if you want one-time view)
+        // localStorage.clear();
+    </script>
+</body>
+</html>   

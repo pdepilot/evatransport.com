@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/CSS" href="login.css">
+            <script src="https://kit.fontawesome.com/883c330706.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<i class="fa-solid fa-arrow-left"></i>
+
+   <div class="login-container">
+    <h2 class="form-title">Login</h2>
+
+    <form>
+        <label>Phone</label>
+        <input type="text" placeholder="phone number">
+
+        <label>Password</label>
+        <input type="password" placeholder="password" maxlength="10" required>
+
+        <button id="login-btn"><a href="main home.html">Login</a></button>
+    </form>
+
+    <div class="links">
+        <p>Don’t have an account? <a href="sign up.html">Sign Up</a></p>
+        <p>Forgot your password? <a href="#">Reset here</a></p>
+    </div>
+</div>
+<script>
+      const button= document.getElementById("login-btn")
+            button.addEventListener('click', function(){
+                alert('You have successfully logged in');
+            });
+</script>
+ 
+</body>
+</html>

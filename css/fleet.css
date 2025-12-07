@@ -1,0 +1,825 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.a{
+    display: flex;
+    text-align: center;
+    margin-left: 0px;
+    gap: 230px;
+    background-color: #0057b8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  border: 1px solid #ccc;
+  min-width: 150px;
+  visibility: hidden;
+  
+}
+/* Show menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background: #f3f3f3;
+  color: black;
+}
+.b{
+    margin-left: 10px;
+    margin-top: 15px;
+    
+}
+.b ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;   
+}
+.b ul a{
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    color:white ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.c{
+    margin-top: 20px;
+    gap: 10px;
+}
+.fa-solid{
+    font-size: 1.2rem;
+    color: white;
+}
+.fa-circle-user{
+    padding-left: 15px;
+}
+.b ul a:hover{
+    text-decoration: underline white;
+}
+.d{
+    color: white;
+}
+.hero{
+    height: 75vh;
+    width: 100%;
+}
+.fleet-intro {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.fleet-intro h2 {
+    color: royalblue;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.fleet-intro p {
+    color: #333;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+.u{
+    position: relative;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    border-radius: 8px;
+    /* margin-top: 20px; */
+    /* margin-left: 10px; */
+    transition: transform 1.2s;
+}
+.t{
+    position: absolute;
+    top: 124.8%;
+    left: 3%;
+    font-size: 30px;
+    opacity: 0.1;
+    transition: transform 1.2s;
+       background-color:rgba(0, 88, 239, 0.2) ;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    border-radius: 8px;
+    padding-top: 75px;
+}
+.u:hover{
+    transform: scale(1.1);
+    
+}
+.t:hover{
+/* transform: scale(1.1); */
+opacity: 1.0;
+color: white;
+}
+.lux{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    row-gap: 25px;
+    column-gap: 11px;
+    padding: 10px;
+    margin-left: 25px;
+}
+.far img{
+    position: relative;
+    border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.fee{
+    position: absolute;
+    top: 124.8%;
+    left: 344px;
+    font-size: 30px;
+    opacity: 0.1;
+    transition: transform 1.2s;
+       background-color:rgba(0, 88, 239, 0.2) ;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    border-radius: 8px;
+    padding-top: 75px;
+}
+.fee:hover{
+    opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1); */
+}
+.cold{
+    position: relative;
+     border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.sun{
+    position: absolute;
+    top: 124.8%;
+    left: 650px;
+    font-size: 30px;
+    opacity: 0.1;
+    transition: transform 1.2s;
+      background-color:rgba(0, 88, 239, 0.2) ;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    border-radius: 8px;
+    padding-top: 75px;
+}
+.sun:hover{
+    opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1); */
+}
+.sow{
+    position: relative;
+    border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.sot{
+    position: absolute;
+    top: 124.8%;
+    left: 960px;
+    font-size: 30px;
+     opacity: 0.1;
+    transition: transform 1.2s;
+      background-color:rgba(0, 88, 239, 0.2) ;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    border-radius: 8px;
+    padding-top: 75px;
+
+}
+.sot:hover{
+    opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1);  */
+}
+.ar{
+    position: relative;
+     border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.are{
+    position: absolute;
+    top: 166.2%;
+    left: 2.9%;
+    font-size: 30px;
+       opacity: 0.1;
+    transition: transform 1.2s;
+    background-color:rgba(0, 88, 239, 0.2) ;
+    text-align: center;
+    width: 250px;
+    height: 220px;
+    border-radius: 8px;
+    padding-top: 90px;
+}
+.are:hover{
+        opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1);  */
+}
+.bar{
+     position: relative;
+     border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.ba{
+    position: absolute;
+    top: 166.2%;
+    left: 27%;
+    border-radius: 8px;
+    background-color:rgba(0, 88, 239, 0.2) ;
+    text-align: center;
+    padding-top: 90px;
+    width: 250px;
+    height: 220px;
+    font-size: 26px;
+      opacity: 0.1;
+    transition: transform 1.2s;
+}
+.ba:hover{
+         opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1); */
+}
+.qu{
+    position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.qar{
+    position: absolute;
+    top: 166.2%;
+    left: 51.5%;
+    font-size: 30px;
+    background-color:rgba(0,88, 239, 0.2) ;
+    padding-top: 90px;
+    width: 250px;
+    height: 220px;
+    text-align: center;
+      opacity: 0.1;
+    transition: transform 1.2s;
+    border-radius: 8px;
+}
+.qar:hover{
+       opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1); */
+}
+.pat{
+      position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.pa{
+    position: absolute;
+    top: 166.2%;
+    left: 75.8%;
+    font-size: 30px;
+       opacity: 0.1;
+    transition: transform 1.2s;
+    border-radius: 8px;
+    background-color: rgba(0, 88, 239, 0.2);
+    height: 220px;
+    width: 250px;
+    text-align: center;
+    padding-top: 90px;
+}
+.pa:hover{
+         opacity: 1.0;
+    color: white;
+    /* transform: scale(1.1); */
+}
+.birds{
+     display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    row-gap: 25px;
+    column-gap: 11px;
+    padding: 10px;
+    margin-left: 25px;
+}
+.eagle{
+     position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.martial{
+    position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;
+       top: 215% ;
+       left: 2.9%;
+       height: 220px;
+       width: 250px;
+       padding-top: 60px;
+}
+.martial:hover{
+    opacity: 1.0;
+    color: white;
+}
+.golden{
+     position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.finch{
+        position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;
+       top: 215% ;
+       left: 27%;
+       height: 220px;
+       width: 250px;
+       padding-top: 60px;
+}
+.finch:hover{
+opacity: 1.0;
+color: white;
+}
+.gyr{
+     position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;
+}
+.falcon{
+       position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;
+       top: 215% ;
+       left: 51.5%;
+       height: 220px;
+       width: 250px;
+       padding-top: 60px; 
+}
+.falcon:hover{
+    opacity: 1.0;
+    color: white;
+}
+.bull{
+    position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s; 
+}
+.cock{
+      position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;
+       top: 215% ;
+       left: 75.6%;
+       height: 220px;
+       width: 250px;
+       padding-top: 60px;  
+}
+.cock:hover{
+    color: white;
+    opacity: 1.0;
+}
+.wandering{
+    position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s; 
+}
+.albatross{
+   position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       top: 257%;
+       padding-top: 55px;
+}
+.albatross:hover{
+    opacity: 1.0;
+    color: white;
+}
+.gos{
+      position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s; 
+}
+.hawk{
+      position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       top: 257%;
+         padding-top: 55px;
+}
+.hawk:hover{
+    opacity: 1.0;
+    color: white;
+}
+.blue{
+     position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+}
+.jay{
+      position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       top: 257%;
+         padding-top: 55px;
+}
+.jay:hover{
+    opacity: 1.0;
+    color: white;
+}
+.duck{
+     position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;      
+}
+.bill{
+  position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       top: 257%;
+         padding-top: 55px;    
+}
+.bill:hover{
+    opacity: 1.0;
+    color: white;
+}
+.cats{
+     display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    row-gap: 25px;
+    column-gap: 11px;
+    padding: 10px;
+    margin-left: 25px;
+}
+.leo{
+position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;         
+}
+.pard{
+      position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 306%;
+}
+.pard:hover{
+    opacity: 1.0;
+    color: white;
+}
+.ly{
+    position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+}
+.nx{
+     position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 306%; 
+}
+.nx:hover{
+    opacity: 1.0;
+    color: white;
+}
+.cara{
+        position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+}
+.cal{
+     position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 306%; 
+}
+.cal:hover{
+    opacity: 1.0;
+    color: white;
+
+}
+.ser{
+      position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+}
+.val{
+      position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 306%; 
+}
+.val:hover{
+    opacity: 1.0;
+    color: white;
+}
+.mara{
+      position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+}
+.gay{
+    position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 348%;  
+}
+.gay:hover{
+    opacity: 1.0;
+    color: white;
+}
+.chee{
+     position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+
+}
+.tah{
+     position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 348%;  
+}
+.tah:hover{
+    opacity: 1.0;
+    color: white;
+}
+.cou{
+      position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;  
+}
+.gar{
+    position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 348%;    
+}
+.gar:hover{
+    opacity: 1.0;
+    color: white;
+}
+.ja{
+ position: relative;
+         border-radius: 8px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+    transition: transform 1.2s;     
+}
+.guar{
+    position: absolute;
+    text-align: center;
+ background-color: rgba(0, 88, 239, 0.2);
+   font-size: 30px;
+       opacity: 0.1;
+       border-radius: 8px;    
+        height: 220px;
+       width: 250px;
+       padding-top: 45px;
+       top: 348%;     
+}
+.guar:hover{
+    opacity: 1.0;
+    color: white;
+}
+.l{
+    margin-top: 10px;
+    margin-left: 25px;
+     box-shadow:0px 4px 10px rgba(0,0,0,0.1) ;
+     width: 50%;
+     height: 30%;
+     padding: 15px;
+     background-color: royalblue;
+     color: white;
+     border-radius: 8px;
+}
+.z{
+    display: flex;
+    gap: 500px;
+    margin-left: 300px;
+}
+.nana{
+    width: 100px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: royalblue;
+}
+.nana a{
+    text-decoration: none;
+    color: white;
+}
+.nana:hover{
+    background-color: white;
+    color: royalblue;
+}
+.nana a:hover{
+    color: royalblue;
+}
+.papa{
+     width: 140px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: white; 
+}
+.papa a{
+     text-decoration: none;
+    color: royalblue; 
+}
+.papa:hover{
+      background-color: royalblue;
+    color: white;
+}
+.papa a:hover{
+    color: white;
+}
+.footer {
+  background: #053061;
+  color: #eaeaea;
+  padding: 40px 20px 10px;
+  margin-top: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 32px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00aaff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 0 0;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+}
+
+
+
+
+
+
+
